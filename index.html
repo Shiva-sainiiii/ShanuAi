@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shanu AI</title>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #0d0d0d;
+      padding: 20px;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 550px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #00d4ff;
+      letter-spacing: 1px;
+    }
+    #chatbox {
+      width: 100%;
+      height: 420px;
+      overflow-y: auto;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .msg {
+      max-width: 80%;
+      padding: 10px 14px;
+      border-radius: 14px;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    .user {
+      align-self: flex-end;
+      background: linear-gradient(135deg, #00d4ff, #0077ff);
+      color: white;
+    }
+    .bot {
+      align-self: flex-start;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .inputArea {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    #inputBox {
+      flex: 1;
+      padding: 12px;
+      border-radius: 12px;
+      border: none;
+      background: rgba(255,255,255,0.1);
+      color: white;
+      outline: none;
+    }
+    #sendBtn {
+      padding: 12px 20px;
+      border-radius: 12px;
+      border: none;
+      background: #00d4ff;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Shanu AI</h2>
+
+    <div id="chatbox"></div>
+
+    <div class="inputArea">
+      <input type="text" id="inputBox" placeholder="Type a message..." />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
